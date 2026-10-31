@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { background-color: #0a0e1a; color: #e2e8f0; }
+
+/* Enrolled subject dropdown and general select styling */
+select {
+  background-color: #FFFFFF !important;
+  color: #111827 !important;
+}
+
+select option {
+  background-color: #FFFFFF !important;
+  color: #111827 !important;
+}
+
+select option:checked {
+  background-color: #E5E7EB !important;
+  color: #111827 !important;
+}
+
+select option:hover,
+select option:focus {
+  background-color: #E5E7EB !important;
+  color: #111827 !important;
+}
+
+/* Ensure browser autofill maintains dark text on white input background */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
+  -webkit-text-fill-color: #111827 !important;
+  caret-color: #111827 !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.glass {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #a855f7, #22d3ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
